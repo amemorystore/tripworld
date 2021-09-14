@@ -1,7 +1,3 @@
-; Disassembly of "tw.gb"
-; This file was created with:
-; mgbdis v1.4 - Game Boy ROM disassembler by Matt Currie and contributors.
-; https://github.com/mattcurrie/mgbdis
 
 ld_long: MACRO
     IF STRLWR("\1") == "a"
