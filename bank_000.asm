@@ -1,8 +1,3 @@
-; Disassembly of "tw.gb"
-; This file was created with:
-; mgbdis v1.4 - Game Boy ROM disassembler by Matt Currie and contributors.
-; https://github.com/mattcurrie/mgbdis
-
 SECTION "ROM Bank $000", ROM0[$0]
 
 RST_00::

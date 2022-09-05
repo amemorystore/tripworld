@@ -1,4 +1,4 @@
-
+; ......_ ......
 ld_long: MACRO
     IF STRLWR("\1") == "a"
         ; ld a, [$ff40]
@@ -12,7 +12,7 @@ ld_long: MACRO
         ENDC
     ENDC
 ENDM
-
+;.
 INCLUDE "hardware.inc"
 INCLUDE "bank_000.asm"
 INCLUDE "bank_001.asm"
@@ -30,3 +30,4 @@ INCLUDE "bank_00c.asm"
 INCLUDE "bank_00d.asm"
 INCLUDE "bank_00e.asm"
 INCLUDE "bank_00f.asm"
+;. end
