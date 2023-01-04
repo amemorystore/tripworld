@@ -1,30 +1,4 @@
-;*
-;* Gameboy Hardware definitions
-;*
-;* Based on Jones' hardware.inc
-;* And based on Carsten Sorensen's ideas.
-;*
-;* Rev 1.1 - 15-Jul-97 : Added define check
-;* Rev 1.2 - 18-Jul-97 : Added revision check macro
-;* Rev 1.3 - 19-Jul-97 : Modified for RGBASM V1.05
-;* Rev 1.4 - 27-Jul-97 : Modified for new subroutine prefixes
-;* Rev 1.5 - 15-Aug-97 : Added _HRAM, PAD, CART defines
-;*                     :  and Nintendo Logo
-;* Rev 1.6 - 30-Nov-97 : Added rDIV, rTIMA, rTMA, & rTAC
-;* Rev 1.7 - 31-Jan-98 : Added _SCRN0, _SCRN1
-;* Rev 1.8 - 15-Feb-98 : Added rSB, rSC
-;* Rev 1.9 - 16-Feb-98 : Converted I/O registers to $FFXX format
-;* Rev 2.0 -           : Added GBC registers
-;* Rev 2.1 -           : Added MBC5 & cart RAM enable/disable defines
-;* Rev 2.2 -           : Fixed NR42,NR43, & NR44 equates
-;* Rev 2.3 -           : Fixed incorrect _HRAM equate
-;* Rev 2.4 - 27-Apr-13 : Added some cart defines (AntonioND)
-;* Rev 2.5 - 03-May-15 : Fixed format (AntonioND)
-;* Rev 2.6 - 09-Apr-16 : Added GBC OAM and cart defines (AntonioND)
-;* Rev 2.7 - 19-Jan-19 : Added rPCMXX (ISSOtm)
-
-; If all of these are already defined, don't do it again.
-
+;......_ ......*
     IF !DEF(HARDWARE_INC)
 HARDWARE_INC SET 1
 
