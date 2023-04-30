@@ -9,6 +9,7 @@ RST_00::
     nop
     nop
     nop
+;   nop
 
 RST_08::
     nop
