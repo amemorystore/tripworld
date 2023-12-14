@@ -6,15 +6,15 @@ all: tw.gb
 %.1bpp: %.png
 	rgbgfx -d 1 -o $@ $<
 
-game.o: game.asm bank_*.asm
-	rgbasm  -o game.o game.asm
+tw.o: tw.asm bank_*.asm
+	rgbasm  -o tw.o tw.asm
 
-game.gb: game.o
-	rgblink -n game.sym -m game.map -o $@ $<
+tw.gb: tw.o
+	rgblink -n tw.sym -m tw.map -o $@ $<
 	rgbfix -v -p 255 $@
 
 	md5 $@
 
 clean:
-	rm -f game.o game.gb game.sym game.map
+	rm -f tw.o tw.gb tw.sym tw.map
 	find . \( -iname '*.1bpp' -o -iname '*.2bpp' \) -exec rm {} +
