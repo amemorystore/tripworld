@@ -1,4 +1,4 @@
-all: game.gb
+all: tw.gb
 
 %.2bpp: %.png
 	rgbgfx -o $@ $<
